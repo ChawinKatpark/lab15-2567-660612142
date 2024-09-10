@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 
 import { MantineProvider } from "@mantine/core";
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MantineProvider theme={{ primaryColor: "cyan" }}>
+        <MantineProvider theme={{ primaryColor: "pink" }}>
           {children}
         </MantineProvider>
       </body>
